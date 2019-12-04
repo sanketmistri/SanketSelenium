@@ -5,13 +5,13 @@ import org.testng.annotations.Test;
 
 public class TestNGExample2 {
 
-    @Test (enabled = false) //(priority = 2) //(groups="mytest")
+    @Test //(enabled = false) //(priority = 2) //(groups="mytest")
     public void classTwoTest1()
     {
         System.out.println("classTwoTest1");
     }
 
-    @Test //(priority = 3)
+    @Test (groups = "Two")//(priority = 3)
     public void classTwoTest2()
     {
         System.out.println("classTwoTest2");

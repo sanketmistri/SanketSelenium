@@ -71,7 +71,7 @@ public class TestNGExample1 {
 
         //  System.out.println(osStr);
     }
-    @Test//(priority = 3) //(enabled = false)
+    @Test (groups = "Two")//(priority = 3) //(enabled = false)
     public void classOneTest2()
     {
         System.out.println("classOneTest2");

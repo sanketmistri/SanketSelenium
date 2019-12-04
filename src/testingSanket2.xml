@@ -1,14 +1,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="MultipleTestExecution">
+    <groups>
+        <run>
+            <include name="Two"/>
+        </run>
+    </groups>
+
+
 <test name="Test List1">
     <classes>
-        <class name="Sanket.TestNGExample1"/>
+        <class name="Sanket.TestNGExample1">
+               <!-- <methods>
+
+                    <include name="classOneTest2"/>
+
+                </methods>-->
+        </class>
         <class name="Sanket.TestNGExample2"/>
         <class name="Sanket.TestNGExample3"/>
     </classes>
 </test>
 
-    <test name="Test List2">
+    <!--<test name="Test List2">
         <classes>
             <class name="Sanket.NewNG1"/>
             <class name="Sanket.NewNG2"/>
@@ -22,6 +35,6 @@
             <class name="Sanket.DatProviderExample"/>
             <class name="Sanket.DataProviderXlsx"/>
         </classes>
-    </test>
+    </test>-->
 
 </suite>

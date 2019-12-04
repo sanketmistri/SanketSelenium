@@ -19,12 +19,21 @@ public class TestNGExample3 {
         System.out.println("classThreeTest1");
 
 
-       Assert.assertEquals("amol","Aamol","strings are not equal");
+    //   Assert.assertEquals("amol","Aamol","strings are not equal");
     }
 
+
+    @Test (groups = "Two")// (groups="mytest")
+    public void classThreeTest2()
+    {
+        System.out.println("classThreeTest2");
+
+
+        //   Assert.assertEquals("amol","Aamol","strings are not equal");
+    }
   /*@Parameters({"user","pass"})*/
 
-    @Parameters("browser")
+    /*@Parameters("browser")
     @Test //(priority = 3)
     public void classThreeTest2(String br)
     {
@@ -54,8 +63,8 @@ public class TestNGExample3 {
        // driver.get(v);
 
         System.out.println("classThreeTest2");
-      /*  System.out.println("username="+u);
-        System.out.println("password="+p);*/
+      *//*  System.out.println("username="+u);
+        System.out.println("password="+p);*//*
 
 
 
@@ -64,7 +73,7 @@ public class TestNGExample3 {
 
 
 
-    }
+    }*/
     @Test// (priority = 2)
     public void classThreeTest3()
     {
